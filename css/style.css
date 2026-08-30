@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
 }
 a{
     text-decoration: none;
@@ -21,11 +22,12 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 23px 0;
     background: rgba(255, 255, 255, o.20);
     backdrop-filter: blur(2px);
+    z-index: 999;
 
 }
 .nav_wrapper{
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 }
 .logo{
     width: 20%;
@@ -52,8 +54,6 @@ align-items: center;
     font-size: 18px;
     font-weight: 700;
     line-height: normal;
-    font-family: "Urbanist", sans-serif;
-    border: 1px solid #6345D5;
      transition: all linear 0.3s;
 }
 .menu li a{
@@ -64,11 +64,11 @@ align-items: center;
     text-transform: capitalize;
     transition: all linear 0.3s;
     text-transform: capitalize;
-    font-family: "Urbanist", sans-serif;
+    
 
 }
 .nav_btn a:hover{
-    background-color: transparent;
+    background-color: #fff;
     color: #6345D5;
 }
 .menu li a:hover{
@@ -77,3 +77,131 @@ align-items: center;
 /* ================================ Navbar End Here ======================================== */
 
 /* ================================ Banner Start Here ======================================== */
+.shape-1{
+    position: relative;
+}
+.shape-1 img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.shape-2{
+    position: relative;
+}
+.shape-2 img{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+.shape-3{
+    position: relative;
+}
+.shape-3 img{
+    position: absolute;
+    top: 140px;
+    left: 0;
+}
+.banner_wrapper{
+    display: flex;
+    gap: 54px;
+    padding-top: 215px;
+    padding-bottom: 660px;
+}
+.banner_description{
+    width: 503px;
+    position: relative;
+    z-index: 999;
+}
+.banner_description h1{
+    color: #192252;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 110%;
+}
+.banner_description p{
+    max-width: 332px;
+    color: #848FAC;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 40px 0;
+}
+.banner_btn{
+    display: flex;
+    gap: 24px;
+}
+.banner_btn a:first-child{
+    padding: 20px 40px;
+    background-color: #6345D5;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    display: inline-block;
+    transition: all linear 0.3s;
+}
+.banner_btn a:first-child:hover{
+    background-color: #fff;
+    color: #192252;
+}
+.banner_btn a:last-child{
+    padding: 20px 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #6345D5;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    display: inline-block;
+    transition: all linear 0.3s;
+}
+.banner_btn a:last-child:hover{
+    background-color: #6345D5;
+    color: #fff;
+}
+.banner_img{
+    width: 683px;
+    position: relative;
+    left: 40px;
+    z-index: 999;
+}
+.banner_bigimg_box{
+    position: relative;
+}
+.banner_bigimg{
+    width: 100%;
+    height: 882px;
+    border-radius: 24px;
+    background-color: #D9D9D9;
+    position: absolute;
+    bottom: -422px;
+    z-index: 999;
+    overflow: hidden;
+}
+.banner_bigimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ================================ Banner End Here ======================================== */
+/* ================================ Navbar Start Here ======================================== */
+#xyz{
+    background-color: #201353;
+    height: 1000px;
+}
+/* ================================ Navbar End Here ======================================== */
+/* ================================ Navbar Start Here ======================================== */
+/* ================================ Navbar End Here ======================================== */
+/* ================================ Navbar Start Here ======================================== */
+/* ================================ Navbar End Here ======================================== */
+/* ================================ Navbar Start Here ======================================== */
+/* ================================ Navbar End Here ======================================== */
+/* ================================ Navbar Start Here ======================================== */
+/* ================================ Navbar End Here ======================================== */
+/* ================================ Navbar Start Here ======================================== */
+/* ================================ Navbar End Here ======================================== */
+/* ================================ Navbar Start Here ======================================== */
+/* ================================ Navbar End Here ======================================== */
