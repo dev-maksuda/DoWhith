@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6,p{
     margin: 0 auto;
 }
 /* ================================ Navbar Start Here ======================================== */
-.navbar{
+#navbar{
     padding: 23px 0;
     background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(2px);
@@ -30,7 +30,6 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .logo{
     width: 20%;
-
 }
 .menu{
     width: 60%;
@@ -53,7 +52,7 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 18px;
     font-weight: 700;
     line-height: normal;
-     transition: all linear 0.3s;
+    transition: all linear 0.3s;
 }
 .menu li a{
     color: #606D93;
@@ -234,10 +233,191 @@ h1,h2,h3,h4,h5,h6,p{
 /* ================================ Counter End Here ======================================== */
 
 
-/* ================================ Navbar Start Here ======================================== */
-/* ================================ Navbar End Here ======================================== */
-/* ================================ Navbar Start Here ======================================== */
-/* ================================ Navbar End Here ======================================== */
+/* ================================ Feature Start Here ====================================== */
+
+#feature{
+    padding: 100px 0;
+    background-color: #201353;
+    position: relative;
+}
+.feature_heading{
+    display: flex;
+    justify-content: space-between;
+}
+.feature_heading h2{
+    color: #fff;
+    max-width: 514px;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: normal;
+}
+.feature_heading p{
+    margin-top: 18px;
+    max-width: 555px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    color: rgba(255, 255, 255, 0.64);
+}
+.feature_main{
+    margin-top: 48px;
+}
+.feature_wrapper{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+.feature_img{
+    position: absolute;
+    bottom: -4px;
+    right: 5%;
+}
+.feature_wrapper .transition{
+    max-width: 368px;
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 24px;
+}
+.transition.transition_heading{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.transition .transition_heading h4{
+    color: #192252;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+}
+.transition > p{
+    margin-top: 20px;
+    color: #848FAC;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.transition .progress{
+    margin-top: 24px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #EFF3FA;
+    position: relative;
+}
+.transition .progress::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    border-radius: 2px;
+    background-color: #6245D5;
+    overflow: hidden;
+}
+.feature_wrapper .history{
+    max-width: 368px;
+    border-radius: 16px;
+    border: 1.5px solid #2C1A74;
+    padding: 24px;
+}
+.history_heading{
+    display: flex;
+    gap: 12px;
+    align-items: center;  
+}
+.history_heading h4{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+}
+.skilliton1{
+    margin-top: 20px;
+    width: 307px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.30);
+}
+.skilliton2{
+    margin-top: 10px;
+    width: 287px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.skilliton3{
+    margin-top: 26px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.30);
+}
+/* ================================ Feature End Here ======================================== */
+
+/* ================================ Video Start Here ======================================== */
+#video{
+    padding: 132px 0 140px 0;
+}
+.video_wrapper{
+    display: flex;
+    gap: 126px;
+    align-items: center;
+}
+.video_box{
+    width: 600px;
+    height: 600px;
+    border-radius: 24px;
+    background-color: #cdc3c3;
+    overflow: hidden;
+    position: relative;
+}
+.video_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.play_btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.video_details{
+    width: 514px;
+}
+.video_details .video_title{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: normal;
+    color: #192252;
+}
+.video_details p{
+    color: #848FAC;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    max-width: 421px;
+    margin-top: 24px;
+}
+.video_details_list{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.video_details_list li{
+    color: #192252;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: normal;
+}
+.video_details_list li i{
+    color: #219653;
+    margin-right: 29px;
+}
+/* ================================ Video End Here ======================================== */
+
 /* ================================ Navbar Start Here ======================================== */
 /* ================================ Navbar End Here ======================================== */
 /* ================================ Navbar Start Here ======================================== */
