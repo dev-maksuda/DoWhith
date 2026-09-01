@@ -448,227 +448,229 @@ h1,h2,h3,h4,h5,h6,p{
 /* ================================ Brand Section End Here ======================================== */
 
 /* ================================ Pricing Section Start Here ======================================== */
-#pricing{
+#price{
     padding: 100px 0;
 }
-.pricingHeading{
-    text-align: center;
+
+.price_heading{
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
 }
-.pricingHeading h3{
-    color: #192252;
-    font-size: 52px;
+
+.price_heading h3{
     font-weight: 700;
-    line-height: normal;
+    font-size: 52px;
+    line-height: 62px;
+    color: #192252;
 }
-.pricingHeading p{
-    color: #848FAC;
-    font-size: 18px;
+
+.price_heading p{
     font-weight: 500;
-    line-height: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #848FAC;
     margin-top: 24px;
 }
-.pricingWrapper{
-    margin-top: 64px;
+
+.price_wrapper{
     display: flex;
-    gap: 80px;
     justify-content: center;
     align-items: flex-start;
+    gap: 80px;
+    margin-top: 64px;
 }
-.packageMain{
-    width: 515px;
-    display: flex;flex-direction: column;
-    row-gap: 24px;
 
-}
-.packageItem{
-    padding: 24px;
-    border-radius: 16px;
-    border: 1.5px solid #e0e4ec;
+.package_main{
+    width: 515px;
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.package_item{
+    border: 1.5px solid #EFF3FA;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
     align-items: center;
+    gap: 24px;
     transition: all linear 0.3s;
 }
-.packageItem .packageInput{
-    height: 24px;
+
+.package_item .package_input{
     width: 24px;
+    height: 24px;
 }
-.packageItem .packageDetails{
+
+.package_item .package_details{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
-.packageDetails .detailsText .packageName{
+
+.package_details .details_text .package_name{
     display: flex;
-    gap: 8px;
     align-items: center;
+    gap: 8px;
 }
-.packageDetails .detailsText .packageName h4{
-    color: #192252;
-    font-size: 20px;
+
+.package_details .details_text .package_name h4{
     font-weight: 700;
-    line-height: normal;
+    font-size: 20px;
+    line-height: 24px;
     text-transform: uppercase;
+    color: #192252;
     transition: all linear 0.3s;
 }
-.packageDetails .detailsText .packageName span{
-    color: #219653;
+
+.package_details .details_text .package_name span{
     padding: 4px 12px;
     border-radius: 11px;
-    background-color: rgba(33, 150, 84, 0.08);
-    font-size: 12px;
+    background: rgba(33, 150, 84, 0.08);
     font-weight: 600;
-    line-height: normal;
-    transition: all l 0.3s;
-}
-.packageDetails .detailsText p{
-    color: #848FAC;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
-    margin-top: 8px;
-    max-width: 236px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #219653;
     transition: all linear 0.3s;
 }
-.priceAmount{
+
+.package_details .details_text p{
+    max-width: 236px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #848FAC;
+    margin-top: 8px;
+    transition: all linear 0.3s;
+}
+
+.price_amount{
     display: flex;
     align-items: center;
-    gap: 6px;
     justify-content: end;
+    gap: 6px;
 }
-.packageDetails .priceAmount .priceNumber{
-    color: #192252;
-    font-size: 32px;
+
+.package_details .price_amount .price_number{
     font-weight: 700;
-    line-height: normal;
+    font-size: 32px;
+    line-height: 38px;
     text-transform: uppercase;
+    color: #192252;
     transition: all linear 0.3s;
 }
-.priceAmount .packageDuration{
-    font-size: 16px;
+
+.price_amount .package_duration{
     font-weight: 500;
-    line-height: normal;
+    font-size: 16px;
+    line-height: 19px;
     color: #848FAC;
     transition: all linear 0.3s;
 }
-.packageItem:hover{
-    background-color: #6245D5;
+
+.package_item:hover{
+    background: #6245D5;
     border: 1.5px solid #6245D5;
 }
-.packageItem:hover .packageDetails .detailsText .packageName h4 , .packageItem:hover .packageDetails .priceAmount .priceNumber{
-    color: #fff;  
+
+.package_item:hover .package_details .details_text .package_name h4 , .package_item:hover .package_details .price_amount .price_number{
+    color: #FFFFFF;  
 }
-.packageItem:hover .packageDetails .detailsText .packageName span{
-    background-color: rgba(255, 255, 255, 0.08);
+
+.package_item:hover .package_details .details_text .package_name span{
+    background: rgba(255, 255, 255, 0.08);
     color: rgba(255, 255, 255, 0.80);
 }
-.packageItem:hover .packageDetails .detailsText p , .packageItem:hover .priceAmount .packageDuration{
+
+.package_item:hover .package_details .details_text p , .package_item:hover .price_amount .package_duration{
     color: rgba(255, 255, 255, 0.64);
 }
 
-.packageItem .packageInput input[type="radio"] {
-    -webkit-appearance: none;
-    appearance: none;
-    margin: 0;
+.package_item .package_input input[type="radio"]::after {
+    display: inline-block;
     width: 24px;
     height: 24px;
+    margin-top: 10px;
     border-radius: 50%;
     border: 2px solid #848FAC;
-    background-color: #fff;
-    outline: none;
+    background: #FFFFFF;
     cursor: pointer;
-    display: inline-block;
-    position: relative;
-}
-
-.packageItem .packageInput input[type="radio"]:checked {
-    background-color: #6245D5;
-    border: 6px solid #fff;
-    box-shadow: 0 0 0 2px #6245D5; 
-}
-
-/* .packageItem .packageInput input[type="radio"]::after{
-    margin-top: 10px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
+    visibility: visible;
     position: relative;
     content: "";
-    display: inline-block;
-    border: 2px solid #848FAC;
-    visibility: visible;
-    background-color: #fff;
-    left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
-} */
-/* .packageItem .packageInput input[type="radio"]:checked::after{
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.package_item .package_input input[type="radio"]:checked::after {
     width: 17px;
     height: 17px;
-    border-radius: 50%;
+    background: #6245D5;
+    border: 6px solid #FFFFFF;
+    box-shadow: 0 0 0 2px #6245D5;
+    visibility: visible; 
     position: relative;
     content: "";
-    background-color: #6245D5;
-    display: inline-block;
-    visibility: visible;
-    border: 6px solid #fff;
-    left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
-} */
-.planMain{
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.plan_main{
     width: 525px;
     padding: 55px 48px 70px 52px ;
     border-radius: 16px;
-    background-color: #F7F7F7;
+    background: #F7F7F7;
 }
-.planBtn{
-    border-radius: 40px;
-    background-color: #fff;
-    padding: 4px;
+
+.plan_btn{
     display: inline-block;
+    padding: 4px;
+    border-radius: 40px;
+    background: #FFFFFF;
 }
-.planBtn button{
+
+.plan_btn button{
     border: none;
-    background-color: transparent;
     padding: 12px 16px;
-    color: #848FAC;
-    font-size: 16px;
+    background: transparent;
     font-weight: 600;
-    line-height: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #848FAC;
 }
-.planBtn .active{
-    background-color: #FC9770;
-    color: #fff;
+
+.plan_btn .active{
+    background: #FC9770;
+    color: #FFFFFF;
     border-radius: 22px;
 }
-.planMain ul{
-    margin-top: 60px;
+
+.plan_main ul{
     display: flex;
     flex-direction: column;
     row-gap: 52px;
+    margin-top: 60px;
 }
-.planMain ul li{
+
+.plan_main ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-.planMain ul li i{
+
+.plan_main ul li i{
     color: #6245D5;
 }
-.planMain ul li span{
-    color: #192252;
-    font-size: 18px;
+
+.plan_main ul li span{
     font-weight: 500;
-    line-height: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #192252;
 }
 /* ================================ Pricing Section End Here ======================================== */
 
-/* ================================ Navbar Start Here ======================================== */
-/* ================================ Navbar End Here ======================================== */
-/* ================================ Navbar Start Here ======================================== */
-/* ================================ Navbar End Here ======================================== */
