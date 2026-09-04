@@ -764,14 +764,14 @@ h1,h2,h3,h4,h5,h6,p{
     background-color: rgba(255, 255, 255, 0.12);
     border-radius: 24px;
 }
-.Contact_form .formheading{
+.Contact_form .form_heading{
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 24px;
     align-items: center;
 }
-.Contact_form .formheading h5{
+.Contact_form .form_heading h5{
     color: #fff;
     font-size: 24px;
     font-weight: 700;
